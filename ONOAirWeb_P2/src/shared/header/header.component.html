@@ -1,0 +1,26 @@
+<header class="header">
+    <div class="header-content">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-button" aria-label="Open menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1><a routerLink="/">OnoAir</a></h1>
+    </div>
+  
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="adminMenu">Admin</button>
+      <button mat-menu-item [matMenuTriggerFor]="userMenu">User</button>
+    </mat-menu>
+  
+    <!-- Admin Submenu -->
+    <mat-menu #adminMenu="matMenu">
+      <button mat-menu-item routerLink="/admin/manage-flights">Manage Flights</button>
+      <button mat-menu-item routerLink="/admin/manage-destinations">Manage Destinations</button>
+    </mat-menu>
+  
+    <!-- User Submenu -->
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item routerLink="/search-flight">Search a flight</button>
+      <button mat-menu-item routerLink="/bookings">My Bookings</button>
+    </mat-menu>
+  </header>
+  
