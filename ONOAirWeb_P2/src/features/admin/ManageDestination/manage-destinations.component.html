@@ -1,0 +1,25 @@
+<section class="manage-destinations">
+  <h1>Manage Destinations</h1>
+  <table class="destinations-table" aria-label="Destinations Table">
+    <thead>
+      <tr>
+        <th scope="col">Destination Code</th>
+        <th scope="col">Destination Name</th>
+        <th scope="col">Airport Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let destination of destinations">
+        <td>{{ destination.destinationCode }}</td>
+        <td>{{ destination.name }}</td>
+        <td>{{ destination.airportName }}</td>
+        <td>
+          <button (click)="navigateToViewDestination(destination.destinationCode)">
+            View Details
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
