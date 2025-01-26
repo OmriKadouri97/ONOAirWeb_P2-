@@ -10,7 +10,7 @@ export class DestinationService {
       destinationCode: 'TLV',
       name: 'Tel Aviv',
       airportName: 'Ben Gurion Airport',
-      airportWebsite: 'https://www.iaa.gov.il/en/airports/ben-gurion/',
+      airportWebsite: 'https://www.iaa.gov.il/en/',
       email: 'contact@tlvairport.com',
       imageUrl: 'https://i.pinimg.com/736x/fe/fd/2d/fefd2dba67dcda3d4fd7b80eb2ef10fa.jpg',
       id: '1',
