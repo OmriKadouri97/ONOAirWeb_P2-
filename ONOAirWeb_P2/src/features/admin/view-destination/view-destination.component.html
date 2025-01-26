@@ -1,34 +1,33 @@
 <div *ngIf="destination" class="destination-container">
-    <h1>Destination Details</h1>
-    <div class="destination-details">
-      <p><strong>Destination Code:</strong> {{ destination.destinationCode }}</p>
-      <p><strong>Destination Name:</strong> {{ destination.name }}</p>
-      <p><strong>Airport Name:</strong> {{ destination.airportName }}</p>
-      <p><strong>Airport URL:</strong> 
-        <a [href]="destination.airportWebsite" target="_blank" rel="noopener noreferrer">
-          Visit Airport Website
-        </a>
-      </p>
-      <p><strong>Image URL:</strong> 
-        <a [href]="destination.imageUrl" target="_blank" rel="noopener noreferrer">
-          View Full Image
-        </a>
-      </p>
-      <img 
-        [src]="destination.imageUrl" 
-        [alt]="'Image of ' + destination.name" 
-        loading="lazy" 
-      />
-    </div>
-    <div class="back-button-container">
-      <button 
-        mat-raised-button 
-        color="primary" 
-        class="back-button" 
-        (click)="goBack()"
-      >
-        Back
-      </button>
-    </div>
+  <h1>Destination Details</h1>
+  <div class="destination-details">
+    <p><strong>Destination Code:</strong> {{ destination.destinationCode }}</p>
+    <p><strong>Destination Name:</strong> {{ destination.name }}</p>
+    <p><strong>Airport Name:</strong> {{ destination.airportName }}</p>
+    <p><strong>Airport URL:</strong> 
+      <a [href]="destination.airportWebsite" target="_blank" rel="noopener noreferrer">
+        {{ destination.airportWebsite }}
+      </a>
+    </p>
+    <p><strong>Image URL:</strong> 
+      <a [href]="destination.imageUrl" target="_blank" rel="noopener noreferrer">
+        {{ destination.imageUrl }}
+      </a>
+    </p>
+    <img 
+      [src]="destination.imageUrl" 
+      [alt]="'Image of ' + destination.name" 
+      loading="lazy" 
+    />
   </div>
-  
+  <div class="back-button-container">
+    <button 
+      mat-raised-button 
+      color="primary" 
+      class="back-button" 
+      (click)="goBack()"
+    >
+      Back
+    </button>
+  </div>
+</div>
