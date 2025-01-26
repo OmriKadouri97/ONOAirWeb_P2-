@@ -49,12 +49,12 @@
   }
   
   button:hover {
-    background-color: #1259a5;
+    background-color: #ffffff;
     transform: scale(1.05);
   }
   
   button:active {
-    background-color: #0a3a6e;
+    background-color: #ffffff(0, 0%, 100%);
     transform: scale(1);
   }
   
