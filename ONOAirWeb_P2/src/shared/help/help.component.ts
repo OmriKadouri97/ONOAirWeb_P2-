@@ -25,7 +25,7 @@ export class HelpComponent {
   faqSections = [
     {
       title: 'How to search for flights?',
-      content: 'Use the “Find a Flight” section on the home page to search for flights by origin, destination, and departure date.',
+      content: 'Use the “Find a Flight” or “Last Minute Flights” section on the home page or the “Search for Flights” page on the navigation bar in the header go to "User" -> "Search a Flight" to search for flights by origin, destination, and departure date.',
     },
     {
       title: 'How to manage bookings?',
