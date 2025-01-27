@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./search-flight.component.css'],
 })
 export class SearchFlightComponent implements AfterViewInit {
-  displayedColumns: string[] = ['flightNumber', 'departureCode', 'arrivalCode', 'departureDateTime', 'arrivalDateTime', 'numberOfSeats', 'actions'];
+  displayedColumns: string[] = ['flightNumber', 'departureCode', 'arrivalCode', 'departureDateTime', 'arrivalDateTime', 'actions'];
   dataSource = new MatTableDataSource<Flight>();
 
   @ViewChild(MatSort) sort!: MatSort;
