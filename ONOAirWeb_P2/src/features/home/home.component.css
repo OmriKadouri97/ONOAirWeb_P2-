@@ -90,6 +90,11 @@ section {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.2s ease;
+    transform: translateX(40px); ;
+  }
+
+  .last-minute-flights-button {
+    transform: translateX(7px); 
   }
   
   button:hover {

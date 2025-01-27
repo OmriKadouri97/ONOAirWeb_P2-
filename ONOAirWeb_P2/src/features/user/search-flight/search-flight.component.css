@@ -16,6 +16,10 @@
     margin-top: 1rem;
     border-collapse: collapse;
   }
+
+  button{
+    transform: translateX(35px);
+  }
   
   th.mat-header-cell {
     padding: 1rem;

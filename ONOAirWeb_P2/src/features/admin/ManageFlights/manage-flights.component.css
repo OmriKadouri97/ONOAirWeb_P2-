@@ -101,6 +101,7 @@
     font-size: 0.9rem;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: translateX(10px);
   }
   
   button:hover {
