@@ -20,6 +20,11 @@
   .faq-panel {
     margin-bottom: 1rem;
   }
+
+  .search-button mat-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
   
   .support-section {
     margin-top: 3rem;
