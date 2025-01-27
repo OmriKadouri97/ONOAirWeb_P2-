@@ -106,11 +106,9 @@
   
   button:hover {
     background-color: #ffffff;
-    transform: scale(1.05);
   }
   
   button:active {
-    transform: scale(1);
     background-color: #ffffff;
   }
   
