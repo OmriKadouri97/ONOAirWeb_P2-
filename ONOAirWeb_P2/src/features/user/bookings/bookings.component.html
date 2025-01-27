@@ -4,10 +4,10 @@
       <img [src]="reservation.destinationImage" alt="Destination Image" />
       <div class="reservation-details">
         <p><strong>Origin:</strong> {{ reservation.origin }}</p>
-        <p><strong>Boarding:</strong> {{ reservation.boardingDateTime | date: 'dd/MM/yyyy, h:mm a' }}</p>
+        <p><strong>Boarding:</strong> {{ reservation.boardingDateTime | date: 'dd/MM/yyyy , h:mm a' }}</p>
         <p><strong>Destination:</strong> {{ reservation.destination }}</p>
-        <p><strong>Landing:</strong> {{ reservation.landingDateTime | date: 'dd/MM/yyyy, h:mm a' }}</p>
-        <p><strong>No. of passengers:</strong> {{ reservation.numberOfPassengers }}</p>
+        <p><strong>Landing:</strong> {{ reservation.landingDateTime | date: 'dd/MM/yyyy , h:mm a' }}</p>
+        <p><strong>Number of passengers:</strong> {{ reservation.numberOfPassengers }}</p>
         <button mat-raised-button color="primary" (click)="navigateToTicketDetails(reservation.reservationCode)"> 
           View Ticket
         </button>
@@ -19,10 +19,10 @@
       <img [src]="reservation.destinationImage" alt="Destination Image" />
       <div class="reservation-details">
         <p><strong>Origin:</strong> {{ reservation.origin }}</p>
-        <p><strong>Boarding:</strong> {{ reservation.boardingDateTime | date: 'dd/MM/yyyy, h:mm a' }}</p>
+        <p><strong>Boarding:</strong> {{ reservation.boardingDateTime | date: 'dd/MM/yyyy , h:mm a' }}</p>
         <p><strong>Destination:</strong> {{ reservation.destination }}</p>
-        <p><strong>Landing:</strong> {{ reservation.landingDateTime | date: 'dd/MM/yyyy, h:mm a' }}</p>
-        <p><strong>No. of passengers:</strong> {{ reservation.numberOfPassengers }}</p>
+        <p><strong>Landing:</strong> {{ reservation.landingDateTime | date: 'dd/MM/yyyy , h:mm a' }}</p>
+        <p><strong>Number of passengers:</strong> {{ reservation.numberOfPassengers }}</p>
         <button mat-raised-button color="primary" (click)="navigateToTicketDetails(reservation.reservationCode)"> 
           View Ticket
         </button>

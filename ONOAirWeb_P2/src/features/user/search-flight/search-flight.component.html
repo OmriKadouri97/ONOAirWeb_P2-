@@ -3,7 +3,7 @@
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
       <!-- Flight Number Column -->
       <ng-container matColumnDef="flightNumber">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Flight No.</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Flight Number</th>
         <td mat-cell *matCellDef="let flight">{{ flight.flightNumber }}</td>
       </ng-container>
   
@@ -22,13 +22,13 @@
       <!-- Departure Date and Time Column -->
       <ng-container matColumnDef="departureDateTime">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Departure</th>
-        <td mat-cell *matCellDef="let flight">{{ flight.departureDateTime | date: 'dd/MM/yyyy, h:mm a' }}</td>
+        <td mat-cell *matCellDef="let flight">{{ flight.departureDateTime | date: 'dd/MM/yyyy , h:mm a' }}</td>
       </ng-container>
   
       <!-- Arrival Date and Time Column -->
       <ng-container matColumnDef="arrivalDateTime">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Arrival</th>
-        <td mat-cell *matCellDef="let flight">{{ flight.arrivalDateTime | date: 'dd/MM/yyyy, h:mm a' }}</td>
+        <td mat-cell *matCellDef="let flight">{{ flight.arrivalDateTime | date: 'dd/MM/yyyy , h:mm a' }}</td>
       </ng-container>
   
       <!-- Actions Column -->
