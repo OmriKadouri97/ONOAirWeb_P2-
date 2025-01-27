@@ -39,8 +39,8 @@
   }
   
   .destinations-table th {
-    background-color: #004aad; /* Consistent with your primary color scheme */
-    color: #ffffff;
+    background-color: #ffffff; /* Consistent with your primary color scheme */
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
