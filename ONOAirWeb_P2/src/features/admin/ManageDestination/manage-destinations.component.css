@@ -1,5 +1,5 @@
 .manage-destinations {
-    margin: 1.5rem auto; /* Adjusted for consistency with other components */
+    margin: 0.4rem auto; /* Adjusted for consistency with other components */
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cleaner look */
@@ -7,16 +7,18 @@
     padding: 1.5rem;
     max-width: 80%; /* Responsive width */
     border: 1px solid #ddd;
-    transform: translateY(-20px); /* Slightly lifted container */
+    height: 82%;
   }
 
   .manage-destinations h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     color: #333;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
+    transform: translateY(-40px); /* Slightly lifted heading */
   }
   
   /* Table Styles */
@@ -27,11 +29,12 @@
     border-radius: 8px;
     overflow: hidden;
     background-color: #ffffff;
+    transform: translateY(-50px); /* Slightly lifted container */
   }
   
   .destinations-table th,
   .destinations-table td {
-    padding: 0.8rem 1rem; /* Reduced padding for compact look */
+    padding: 0.55rem 1rem; /* Reduced padding for compact look */
     border: 1px solid #ddd;
     text-align: left;
     font-size: 0.9rem;
