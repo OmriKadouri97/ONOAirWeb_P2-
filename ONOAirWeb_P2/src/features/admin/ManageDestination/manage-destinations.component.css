@@ -49,19 +49,7 @@
     letter-spacing: 0.05em;
     text-align: center;
   }
-  
-  .destinations-table td {
-    background-color: #ffffff;
-  }
-  
-  .destinations-table tr:nth-child(even) td {
-    background-color: #f9f9f9; /* Subtle alternating row color */
-  }
-  
-  .destinations-table tr:hover td {
-    background-color: #e0f0ff; /* Softer hover effect */
-  }
-  
+
   /* Button Styling */
   button {
     font-weight: bold;
@@ -69,21 +57,24 @@
     border: none;
     border-radius: 4px;
     padding: 0.5rem 1rem;
-    color: #ffffff;
-    background-color: #1976d2;
+    color: #0078d7;
+    background-color: #ffffff;
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transform: translateX(40px); /* Slightly shifted button */
   }
-  
+
   button:hover {
-    background-color: #1259a5;
+    background: white;
+    color: #1976d2;
+  }
+
+  button:active {
+    color: inherit;
+    background-color: inherit;
   }
   
-  button:active {
-    background-color: #0a3a6e;
-  }
   
   /* Scrollbar Customization */
   .destinations-table::-webkit-scrollbar {
