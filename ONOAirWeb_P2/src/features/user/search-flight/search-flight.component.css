@@ -17,10 +17,6 @@
     min-height: 500px;
     border-collapse: collapse;
   }
-
-  button{
-    transform: translateX(35px);
-  }
   
   th.mat-header-cell {
     padding: 1rem;
@@ -41,4 +37,20 @@
   .mat-header-row {
     background-color: #f5f5f5;
   }
-  
+
+  /* Ensure the Actions Column is Properly Centered */
+  .mat-column-actions {
+    display: table-cell;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers the button */
+    vertical-align: middle; /* Ensures button is vertically aligned */
+    padding: 0 !important; /* Removes extra padding */
+    border: 1px solid #333 !important; /* Keeps border consistent */
+    border-bottom: #ffffff !important; /* Removes bottom border */
+}
+
+
+
+
+
