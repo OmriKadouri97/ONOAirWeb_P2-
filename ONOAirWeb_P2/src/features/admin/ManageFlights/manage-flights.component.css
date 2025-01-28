@@ -18,12 +18,13 @@
   .table-container {
     display: flex; /* Use flexbox for better alignment */
     flex-direction: column; /* Ensure the content flows vertically */
+    vertical-align: middle;
     margin: 0 !important; /* Remove unwanted margins */
     max-width: 100%; /* Make the container responsive */
     max-height: 75vh; /* Set a fixed height for vertical scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Hide horizontal scrolling */
-    border: 1px solid #ddd; /* Add a light border */
+    border: 1px solid #ffffff; /* Add a light border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     background-color: #ffffff; /* White background for clarity */
@@ -52,7 +53,6 @@
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-    text-align: center; /* Center-align header text */
   }
   
   .mat-row {
@@ -102,8 +102,20 @@
     font-size: 0.9rem;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    transform: translateX(39%);
   }
+
+  .mat-column-actions {
+    display: table-cell;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Ensures it fills the full cell height */;
+    text-align: center; /* Centers the button */
+    vertical-align: middle; /* Ensures button is vertically aligned */
+    padding: 0 !important; /* Removes extra padding */
+    border: 1px solid #333 !important; /* Keeps border consistent */
+    border-bottom: #ffffff !important; /* Removes bottom border */
+}
+
   
   button:hover {
     background-color: #ffffff;
