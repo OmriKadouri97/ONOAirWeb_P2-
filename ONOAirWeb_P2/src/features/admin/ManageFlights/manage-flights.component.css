@@ -1,6 +1,7 @@
 .manage-flights {
     margin: 0 auto;
-    max-width: 1200px; /* Center container */
+    max-width: 98%; /* Center container */
+    max-height: 100%;
     overflow: hidden; /* Prevent unnecessary overflow */
     padding: 0; /* Remove default padding */
   }
@@ -19,7 +20,7 @@
     flex-direction: column; /* Ensure the content flows vertically */
     margin: 0 !important; /* Remove unwanted margins */
     max-width: 100%; /* Make the container responsive */
-    max-height: 500px; /* Set a fixed height for vertical scrolling */
+    max-height: 75vh; /* Set a fixed height for vertical scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Hide horizontal scrolling */
     border: 1px solid #ddd; /* Add a light border */
