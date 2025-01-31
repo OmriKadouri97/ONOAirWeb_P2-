@@ -67,8 +67,8 @@ export class ReservationService {
       flightNumber: 'YX4938',
       origin: 'Dubai',
       destination: 'Philippines',
-      boardingDateTime: '2025-02-22T16:00:00',
-      landingDateTime: '2025-02-22T22:00:00',
+      boardingDateTime: '2025-02-06T16:00:00',
+      landingDateTime: '2025-02-06T22:00:00',
       numberOfPassengers: 4,
       destinationImage: 'https://i.pinimg.com/736x/19/90/39/19903983026c3855561a53d962b24d07.jpg',
       passengers: [

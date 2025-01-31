@@ -48,8 +48,8 @@ export class FlightService {
       flightNumber: 'YX4938',
       departureCode: 'DXB',
       arrivalCode: 'MNL',
-      departureDateTime: '2025-02-22T16:00:00',
-      arrivalDateTime: '2025-02-22T22:00:00',
+      departureDateTime: '2025-02-06T16:00:00',
+      arrivalDateTime: '2025-02-06T22:00:00',
       numberOfSeats: 220,
     },
     {
