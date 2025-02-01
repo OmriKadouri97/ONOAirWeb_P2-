@@ -1,0 +1,135 @@
+/* ✅ Main Container */
+.manage-destinations {
+  margin: 0.4rem auto;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 0.2rem;
+  max-width: 99%;
+  border: 1px solid #ddd;
+  height: 82vh; /* Ensures full height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Page Heading */
+.manage-destinations h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  transform: translateY(-20px);
+}
+
+/* ✅ Table Wrapper - Enables Scrollbar */
+.table-container {
+  min-height: 550px; /* Ensures space for the scrollbar */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 0.5rem;
+  transform: translateY(-45px);
+}
+
+/* ✅ Table Styling */
+.destinations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: -15px; /* Fix extra space below the table */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transform: translateY(-15px); /* Slightly lifted container */
+}
+
+/* ✅ Fix Table Header (Sticky) */
+.destinations-table th {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  position: sticky;
+  padding: 1rem;
+}
+
+/* ✅ Table Body */
+.destinations-table td {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+  background: white;
+}
+
+/* ✅ Alternating Row Colors (Fix Missing Effect) */
+.destinations-table tr:nth-child(even) td {
+  background-color: #f1f5fa; /* Light gray for even rows */
+}
+
+.destinations-table tr:nth-child(odd) td {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+/* ✅ Row Hover Effect */
+.destinations-table tr:hover td {
+  background-color: #eaf4ff; /* Light blue on hover */
+}
+
+/* ✅ Button Styling (Fix Click Animation) */
+button {
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  color: #1976d2;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* ✅ Hover & Click Effect */
+button:hover {
+  background-color: inherit;
+  color: #1259a5;
+  transform: scale(1.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: inherit;
+  color: #1259a5;
+  transform: scale(0.95);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Fix Scrollbar */
+.table-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  border-radius: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #1259a5;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}

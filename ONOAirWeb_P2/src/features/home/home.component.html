@@ -1,0 +1,68 @@
+<section class="last-minute-flights">
+    <h2>Last Minute Flights</h2>
+    <div class="flights-container">
+      <mat-card *ngFor="let flight of lastMinuteFlights" class="flight-card">
+        <mat-card-header>
+          <mat-card-title>{{ flight.arrivalCode }}</mat-card-title>
+          <mat-card-subtitle>
+            {{ flight.departureDateTime | date: 'dd/MM/yyyy  h:mm a' }}
+          </mat-card-subtitle>
+          <img mat-card-image [src]="flight.imageUrl" [alt]="flight.destinationName || 'Flight Destination'" />
+        </mat-card-header>
+        <mat-card-content>
+          <p><strong>From: {{ flight.departureCode }}</strong></p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" class ="last-minute-flights-button" (click)="navigateToFlightDetails(flight.flightNumber)">
+            Book
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </section>
+  
+  <section class="future-flights">
+    <h2>Find a Flight</h2>
+    <table mat-table [dataSource]="futureFlights" matSort class="mat-elevation-z8">
+      <!-- Flight Number Column -->
+      <ng-container matColumnDef="flightNumber">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Flight Number</th>
+        <td mat-cell *matCellDef="let flight">{{ flight.flightNumber }}</td>
+      </ng-container>
+  
+      <!-- Origin Column -->
+      <ng-container matColumnDef="departureCode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Origin</th>
+        <td mat-cell *matCellDef="let flight">{{ flight.departureCode }}</td>
+      </ng-container>
+  
+      <!-- Destination Column -->
+      <ng-container matColumnDef="arrivalCode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Destination</th>
+        <td mat-cell *matCellDef="let flight">{{ flight.arrivalCode }}</td>
+      </ng-container>
+  
+      <!-- Departure Date Column -->
+      <ng-container matColumnDef="departureDateTime">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Departure</th>
+        <td mat-cell *matCellDef="let flight">{{ flight.departureDateTime | date: 'dd/MM/yyyy , h:mm a' }}</td>
+      </ng-container>
+  
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let flight">
+          <button mat-raised-button color="primary" (click)="navigateToFlightDetails(flight.flightNumber)">
+            Book
+          </button>
+        </td>
+      </ng-container>
+  
+      <!-- Header and Row Definitions -->
+      <tr mat-header-row *matHeaderRowDef="['flightNumber', 'departureCode', 'arrivalCode', 'departureDateTime', 'actions']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['flightNumber', 'departureCode', 'arrivalCode', 'departureDateTime', 'actions'];"></tr>
+    </table>
+  </section>
+  
+  
+  

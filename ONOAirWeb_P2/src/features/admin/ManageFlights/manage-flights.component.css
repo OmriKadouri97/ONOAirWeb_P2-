@@ -1,0 +1,127 @@
+.manage-flights {
+    margin: 0 auto;
+    max-width: 98%; /* Center container */
+    max-height: 100%;
+    overflow: hidden; /* Prevent unnecessary overflow */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .manage-flights h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 0.5rem ; /* Add space below heading */
+    margin-top:0.5rem; /* Add space above heading */
+  }
+  
+  /* Table container to handle scrolling */
+  .table-container {
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Ensure the content flows vertically */
+    vertical-align: middle;
+    margin: 0 !important; /* Remove unwanted margins */
+    max-width: 100%; /* Make the container responsive */
+    max-height: 75vh; /* Set a fixed height for vertical scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+    border: 1px solid #ffffff; /* Add a light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background for clarity */
+    padding: 0 !important; /* Eliminate extra padding */
+    position: relative; /* Necessary for positioning adjustments */
+  }
+  
+  /* Angular Material Table */
+  .table-container table {
+    width: 100%; /* Ensure the table fills the container width */
+    table-layout: auto; /* Allow the table to adjust column widths dynamically */
+    border-collapse: collapse; /* Prevent gaps between table cells */
+    background-color: #ffffff; /* Maintain a clean background */
+    margin: 0; /* No extra margin */
+    padding: 0; /* No extra padding */
+    position: static; /* Prevent unnecessary relative positioning */
+  }
+  
+  .mat-header-row {
+    background-color: #004aad;
+    color: white;
+  }
+  
+  .mat-header-cell {
+    padding: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .mat-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .mat-cell {
+    padding: 0.75rem;
+    text-align: center; /* Center-align cell text */
+    color: #333;
+  }
+  
+  .mat-row:nth-child(even) .mat-cell {
+    background-color: #f1f5fa;
+  }
+  
+  .mat-row:hover .mat-cell {
+    background-color: #eaf4ff;
+  }
+  
+  /* Scrollbar Customization */
+  .table-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: #1976d2;
+    border-radius: 4px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #005a9e;
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .mat-column-actions {
+    display: table-cell;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Ensures it fills the full cell height */;
+    text-align: center; /* Centers the button */
+    vertical-align: middle; /* Ensures button is vertically aligned */
+    padding: 0 !important; /* Removes extra padding */
+    border: 1px solid #333 !important; /* Keeps border consistent */
+    border-bottom: #ffffff !important; /* Removes bottom border */
+}
+
+  
+  button:hover {
+    background-color: #ffffff;
+  }
+  
+  button:active {
+    background-color: #ffffff;
+  }
+  

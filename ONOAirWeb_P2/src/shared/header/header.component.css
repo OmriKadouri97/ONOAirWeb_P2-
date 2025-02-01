@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #004aad; /* Primary blue */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .menu-button {
+    color: white;
+    background: none;
+    border: none;
+    transition: transform 0.2s, color 0.3s;
+  }
+  
+  .menu-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+  
+  .menu-button:hover {
+    transform: scale(1.1);
+    color: #80d4ff; /* Hover effect */
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  h1 a {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from parent (white) */
+    transition: color 0.3s;
+  }
+  
+  h1 a:hover {
+    color: #80d4ff;
+  }
+  
